@@ -77,7 +77,7 @@ header.cabecalho_pagina h6 {
 }
 
 /* Formatação de Section */
-section#corpo {
+section#pesquisa {
     border: 2px solid white;
     background-color: rgb(214, 214, 214);
     padding: 3pt;
@@ -85,6 +85,12 @@ section#corpo {
     display: block;
     width: 700;
     border-right: 1px solid #606060;
+}
+
+section#corpo {
+    border: 2px solid white;
+    background-color: rgb(214, 214, 214);
+    padding: 3pt;
 }
 
 table#modulo {
