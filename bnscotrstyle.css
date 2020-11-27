@@ -83,7 +83,9 @@ section#corpo {
     padding: 3pt;
     float: right;
     display: block;
-    width: auto;
+    width: 500;
+    border-right: 1px solid #606060;
+    padding-right: 20px;
 }
 
 table#modulo {
