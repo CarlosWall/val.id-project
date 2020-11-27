@@ -81,6 +81,9 @@ section#corpo {
     border: 2px solid white;
     background-color: rgb(214, 214, 214);
     padding: 3pt;
+    float: right;
+    display: block;
+    width: 700;
 }
 
 table#modulo {
@@ -176,7 +179,7 @@ aside#lado {
     padding: 3pt;
     float: left;
     display: block;
-    width: 300pt;
+    width: 300;
 }
 
 aside#lado h3 {
