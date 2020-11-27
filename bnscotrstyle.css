@@ -168,6 +168,21 @@ table#modulo_parasito td {
     font-style: italic;
 }
 
+/* Formatação de Aside */
+
+aside#lado {
+    border: 2px solid white;
+    background-color: rgb(214, 214, 214);
+    padding: 3pt;
+}
+
+aside#lado h3 {
+    border: 2pt solid black;
+    padding: 2pt;
+    text-indent: 2pt;
+    margin: 2pt;
+    text-align: center;
+}
 /* Formatação de Footer */
 footer {
     color: black;
