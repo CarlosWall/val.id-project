@@ -36,7 +36,7 @@ header#header {
     background-color: rgb(214, 214, 214);
 }
 
-header#header h1 {
+header#header h2 {
     color: black;
     text-shadow: 2px 2px 2px green;
     text-align: center;
@@ -46,7 +46,7 @@ header#header h1 {
     padding: -2pt;
 }
 
-header#header h2 {
+header#header h3 {
     color: black;
     text-align: center;
     text-decoration: none;
