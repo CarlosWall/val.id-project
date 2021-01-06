@@ -7,6 +7,6 @@
         <link rel="shortcut icon" href="media/Logo e Favicon OnBiomedical.png" />
     </head>
     <body>
-        <?php echo "<p>Olá mundo!</p>"?>
+        <?php echo"Olá mundo!"?>
     </body>
 </html>
