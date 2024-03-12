@@ -9,8 +9,9 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f8f8f8;
             color: #333;
+            line-height: 1.6;
         }
 
         header {
@@ -20,29 +21,48 @@
             text-align: center;
         }
 
+        header img {
+            max-width: 200px;
+            height: auto;
+        }
+
         section {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
 
         h1, h2, h3 {
             color: #007bff;
         }
 
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
         button {
             background-color: #007bff;
             color: #fff;
-            padding: 10px 20px;
+            padding: 15px 30px;
             border: none;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
         button:hover {
             background-color: #0056b3;
+        }
+
+        img.partner-logo {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
         }
     </style>
 </head>
@@ -63,8 +83,8 @@
         <!-- Adicione mais conteúdo conforme necessário -->
 
         <h2>Parceiros Confiáveis em Pesquisa Biomédica:</h2>
-        <img src="[Caminho para o Logotipo do Parceiro 1]" alt="Parceiro 1">
-        <img src="[Caminho para o Logotipo do Parceiro 2]" alt="Parceiro 2">
+        <img class="partner-logo" src="[Caminho para o Logotipo do Parceiro 1]" alt="Parceiro 1">
+        <img class="partner-logo" src="[Caminho para o Logotipo do Parceiro 2]" alt="Parceiro 2">
         
         <h2>Entre em Contato Conosco:</h2>
         <button>Contate-nos</button>
