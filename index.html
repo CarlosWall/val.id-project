@@ -7,27 +7,28 @@
     <style>
         /* Adicione seu estilo CSS aqui */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
             margin: 0;
             padding: 0;
             text-align: center;
         }
 
         header {
-            background-color: #333;
-            color: white;
+            background-color: #4d0082;
+            color: #ff99ff;
             padding: 1em;
-            font-size: 1.5em;
+            font-size: 2em;
         }
 
         nav {
-            background-color: #444;
+            background-color: #330066;
             padding: 0.5em;
         }
 
         nav a {
-            color: white;
+            color: #ff99ff;
             text-decoration: none;
             padding: 1em;
             margin: 0.5em;
@@ -36,20 +37,59 @@
         }
 
         nav a:hover {
-            background-color: #555;
+            background-color: #4d0082;
         }
 
         section {
             padding: 20px;
             margin: 20px;
-            background-color: #fff;
+            background-color: #330066;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(255, 153, 255, 0.3);
+        }
+
+        h2 {
+            color: #ff99ff;
+        }
+
+        p {
+            color: #ddd;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            color: #ff99ff;
+            margin-bottom: 0.5em;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ff99ff;
+            border-radius: 3px;
+            background-color: #330066;
+            color: #ddd;
+        }
+
+        input[type="submit"] {
+            background-color: #ff99ff;
+            color: #330066;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e066ff;
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #4d0082;
+            color: #ff99ff;
             padding: 1em;
             position: fixed;
             bottom: 0;
@@ -90,13 +130,13 @@
         <p>Tem perguntas ou precisa de mais informações? Preencha o formulário abaixo para entrar em contato conosco.</p>
         <form>
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required><br>
+            <input type="text" id="nome" name="nome" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" required>
 
-            <label for="mensagem">Mensagem:</label><br>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
 
             <input type="submit" value="Enviar">
         </form>
