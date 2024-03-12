@@ -2,11 +2,13 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 header {
     background-color: #333;
-    padding: 10px;
+    padding: 20px 0;
 }
 
 .logo img {
@@ -16,12 +18,13 @@ header {
 
 .hero {
     text-align: center;
-    padding: 50px 0;
-    background-color: #f4f4f4;
+    padding: 100px 0;
+    background-color: #333;
+    color: #fff;
 }
 
 .hero h1 {
-    color: #333;
+    color: #fff;
 }
 
 .about-us,
@@ -48,13 +51,17 @@ header {
     padding: 15px 30px;
     text-decoration: none;
     color: #fff;
-    background-color: #333;
+    background-color: #8b4513; /* tom de madeira */
     border-radius: 5px;
+}
+
+.buttons a:hover {
+    background-color: #654321; /* tom mais escuro de madeira ao passar o mouse */
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
 }
