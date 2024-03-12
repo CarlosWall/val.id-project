@@ -22,7 +22,7 @@ def resultado():
     resultado_teste = ks_2samp(dados_amostra1, dados_amostra2)
 
     # Exibe o resultado na página de resultados
-    return render_template('resultado.html', resultado_teste=resultado_teste)
+    return render_template('/templates/resultado.html', resultado_teste=resultado_teste)
 
 # Roda a aplicação
 if __name__ == '__main__':
