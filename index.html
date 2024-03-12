@@ -1,98 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validações Biomédicas - [Nome da Sua Empresa]</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header img {
-            max-width: 200px;
-            height: auto;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
-        h1, h2, h3 {
-            color: #007bff;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 1.8;
-        }
-
-        button {
-            background-color: #007bff;
-            color: #fff;
-            padding: 15px 30px;
-            border: none;
-            cursor: pointer;
-            font-size: 18px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        img.partner-logo {
-            max-width: 100%;
-            height: auto;
-            margin: 10px;
-        }
-    </style>
+    <title>Resultado do Teste</title>
 </head>
 <body>
-
-    <header>
-        <img src="[Caminho para o Logo]" alt="Logo da Sua Empresa">
-    </header>
-
-    <section>
-        <h1>Validações Biomédicas de Confiança e Inteligência</h1>
-
-        <p>Bem-vindo à [Nome da Sua Empresa], sua parceira em validações biomédicas de alto padrão.</p>
-
-        <h2>Quem Somos:</h2>
-        <p>Somos especialistas em garantir a precisão e a confiabilidade das metodologias biomédicas...</p>
-
-        <!-- Adicione mais conteúdo conforme necessário -->
-
-        <h2>Parceiros Confiáveis em Pesquisa Biomédica:</h2>
-        <img class="partner-logo" src="[Caminho para o Logotipo do Parceiro 1]" alt="Parceiro 1">
-        <img class="partner-logo" src="[Caminho para o Logotipo do Parceiro 2]" alt="Parceiro 2">
-        
-        <h2>Entre em Contato Conosco:</h2>
-        <button>Contate-nos</button>
-        <button>Solicite um Orçamento</button>
-    </section>
-    <section>
-        <h3><a href='teste_kolmogorov.html'>Teste de Kolmogorov-Smirnov</a></h3>
-    </section>
-
+    <h1>Resultado do Teste de Kolmogorov-Smirnov</h1>
+    <p>Estatística D: {{ resultado_teste.statistic }}</p>
+    <p>Valor p: {{ resultado_teste.pvalue }}</p>
 </body>
 </html>
