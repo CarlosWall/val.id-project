@@ -6,14 +6,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teste de Kolmogorov-Smirnov</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #141414;
+      color: #ffffff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #00bcd4;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #00bcd4;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #00bcd4;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #008ba3;
+    }
+  </style>
 </head>
 <body>
 
   <h1>Teste de Kolmogorov-Smirnov</h1>
 
   <form action="ks_test_script.R" method="post">
-    <label for="dados">Insira os dados (separados por espaços):</label>
-    <input type="text" id="dados" name="dados" required>
+    <label for="dados1">Insira os dados do Grupo 1 (separados por espaços):</label>
+    <input type="text" id="dados1" name="dados1" required>
+    <label for="dados2">Insira os dados do Grupo 2 (separados por espaços):</label>
+    <input type="text" id="dados2" name="dados2" required>
     <br>
     <input type="submit" value="Realizar Teste">
   </form>
