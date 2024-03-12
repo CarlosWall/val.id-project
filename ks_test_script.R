@@ -1,21 +1,37 @@
-# ks_test_script.R
+# app.R
 
-# Função para realizar o teste de Kolmogorov-Smirnov
-ks_test <- function(data1, data2) {
-  result <- ks.test(data1, data2)
-  return(result)
+library(shiny)
+
+# Define a UI
+ui <- fluidPage(
+  titlePanel("Teste de Kolmogorov-Smirnov"),
+
+  sidebarLayout(
+    sidebarPanel(
+      textInput("dados1", "Insira os dados do Grupo 1 (separados por espaços):"),
+      textInput("dados2", "Insira os dados do Grupo 2 (separados por espaços):"),
+      actionButton("realizarTeste", "Realizar Teste")
+    ),
+    mainPanel(
+      h4("Resultado do Teste"),
+      verbatimTextOutput("resultado")
+    )
+  )
+)
+
+# Define the server logic
+server <- function(input, output) {
+  observeEvent(input$realizarTeste, {
+    data1 <- as.numeric(strsplit(input$dados1, " ")[[1]])
+    data2 <- as.numeric(strsplit(input$dados2, " ")[[1]])
+    
+    result <- ks.test(data1, data2)
+    
+    output$resultado <- renderText({
+      paste("Estatística D:", result$statistic, "\nValor p:", result$p.value)
+    })
+  })
 }
 
-# Solicitação dos dados ao usuário para os dois grupos
-user_data1 <- readline(prompt = "Insira os dados do Grupo 1 separados por espaços (ex: 1.2 3.4 5.6): ")
-user_data1 <- as.numeric(strsplit(user_data1, " ")[[1]])
-
-user_data2 <- readline(prompt = "Insira os dados do Grupo 2 separados por espaços (ex: 1.2 3.4 5.6): ")
-user_data2 <- as.numeric(strsplit(user_data2, " ")[[1]])
-
-# Realiza o teste de Kolmogorov-Smirnov
-result <- ks_test(user_data1, user_data2)
-
-# Exibe o resultado
-cat("Estatística D:", result$statistic, "\n")
-cat("Valor p:", result$p.value, "\n")
+# Run the application
+shinyApp(ui, server)
