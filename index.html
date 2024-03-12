@@ -1,82 +1,110 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teste de Kolmogorov-Smirnov</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(90deg, #282c37, #1e1f26);
-      color: #ffffff;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Metodologias Futurísticas</title>
+    <style>
+        /* Adicione seu estilo CSS aqui */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
 
-    h1 {
-      color: #00bcd4;
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            font-size: 1.5em;
+        }
 
-    form {
-      margin-top: 20px;
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+        nav {
+            background-color: #444;
+            padding: 0.5em;
+        }
 
-    label {
-      display: block;
-      margin-bottom: 10px;
-      color: #00bcd4;
-      font-size: 1.2em;
-    }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0.5em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
 
-    input {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      box-sizing: border-box;
-      background-color: #282c37;
-      color: #ffffff;
-      border: 1px solid #00bcd4;
-      border-radius: 5px;
-      outline: none;
-    }
+        nav a:hover {
+            background-color: #555;
+        }
 
-    input:focus {
-      border-color: #00bcd4;
-    }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    input[type="submit"] {
-      background-color: #00bcd4;
-      color: #ffffff;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #008ba3;
-    }
-  </style>
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 
-  <h1>Teste de Kolmogorov-Smirnov</h1>
-  <h3>Feito por Carlos Wallace</h3>
+    <header>
+        <h1>Validação de Metodologias Futurísticas</h1>
+    </header>
 
-  <form action="ks_test_script.R" method="post">
-    <label for="dados1">Insira os dados do Grupo 1 (separados por espaços):</label>
-    <input type="text" id="dados1" name="dados1" required>
-    <label for="dados2">Insira os dados do Grupo 2 (separados por espaços):</label>
-    <input type="text" id="dados2" name="dados2" required>
-    <br>
-    <input type="submit" value="Realizar Teste">
-  </form>
+    <nav>
+        <a href="#introducao">Introdução</a>
+        <a href="#metodologias">Metodologias Futurísticas</a>
+        <a href="#validacao">Validação de Resultados</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="introducao">
+        <h2>Introdução</h2>
+        <p>Bem-vindo ao site de validação de metodologias futurísticas. Aqui exploramos as últimas tendências e abordagens inovadoras para garantir o sucesso de suas metodologias.</p>
+    </section>
+
+    <section id="metodologias">
+        <h2>Métodos Futurísticos</h2>
+        <p>Descubra e valide métodos de ponta que impulsionarão seus projetos para o futuro. Desde inteligência artificial até realidade virtual, estamos na vanguarda da inovação.</p>
+    </section>
+
+    <section id="validacao">
+        <h2>Validação de Resultados</h2>
+        <p>Utilize nossas ferramentas avançadas para validar e analisar os resultados de suas metodologias futurísticas. Garanta a eficácia e a confiabilidade em cada passo do seu projeto.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Tem perguntas ou precisa de mais informações? Preencha o formulário abaixo para entrar em contato conosco.</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Validação de Metodologias Futurísticas</p>
+    </footer>
 
 </body>
 </html>
