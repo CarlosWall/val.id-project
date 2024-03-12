@@ -1,90 +1,60 @@
-/* Reset de estilos para uma base consistente */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Estilo do corpo da página */
 body {
-  font-family: 'Arial', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Estilo do cabeçalho */
 header {
-  background-color: #fff;
-  padding: 20px;
-  border-bottom: 1px solid #ddd;
+    background-color: #333;
+    padding: 10px;
 }
 
-/* Estilo do logotipo */
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #007bff; /* Cor azul */
+.logo img {
+    max-width: 100%;
+    height: auto;
 }
 
-/* Estilo da barra de navegação */
-nav {
-  margin-top: 10px;
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
 }
 
-nav ul {
-  list-style: none;
+.hero h1 {
+    color: #333;
 }
 
-nav li {
-  display: inline-block;
-  margin-right: 20px;
+.about-us,
+.our-services,
+.why-choose-us,
+.partners,
+.contact-us {
+    padding: 50px 0;
 }
 
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  transition: color 0.3s ease;
+.our-services ul,
+.why-choose-us ol {
+    list-style: none;
 }
 
-nav a:hover {
-  color: #007bff; /* Cor azul ao passar o mouse */
+.our-services li,
+.why-choose-us li {
+    margin-bottom: 10px;
 }
 
-/* Estilo do conteúdo principal */
-.container {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
+.buttons a {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
 }
 
-/* Estilo do rodapé */
 footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-/* Estilo de botões */
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  background-color: #007bff;
-  color: #fff;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #0056b3; /* Cor azul mais escura ao passar o mouse */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
