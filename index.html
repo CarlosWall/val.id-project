@@ -4,50 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validação de Metodologias Futurísticas</title>
-    <link rel="stylesheet" href="config/style.css">
+    <style></style>
 </head>
 <body>
 
-    <iframe src="header.html" frameborder="0" width="100%" height="80"></iframe>
+    <header>
+        <h1>Validação de Metodologias Futurísticas</h1>
+    </header>
 
-    <div id="conteudo">
-        <!-- O conteúdo das páginas será carregado aqui dinamicamente -->
-    </div>
+    <nav>
+        <a href="#introducao">Introdução</a>
+        <a href="#metodologias">Metodologias Futurísticas</a>
+        <a href="#validacao">Validação de Resultados</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="introducao">
+        <h2>Introdução</h2>
+        <p>Bem-vindo ao site de validação de metodologias futurísticas. Aqui exploramos as últimas tendências e abordagens inovadoras para garantir o sucesso de suas metodologias.</p>
+    </section>
+
+    <section id="metodologias">
+        <h2>Métodos Futurísticos</h2>
+        <p>Descubra e valide métodos de ponta que impulsionarão seus projetos para o futuro. Desde inteligência artificial até realidade virtual, estamos na vanguarda da inovação.</p>
+    </section>
+
+    <section id="validacao">
+        <h2>Validação de Resultados</h2>
+        <p>Utilize nossas ferramentas avançadas para validar e analisar os resultados de suas metodologias futurísticas. Garanta a eficácia e a confiabilidade em cada passo do seu projeto.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Tem perguntas ou precisa de mais informações? Preencha o formulário abaixo para entrar em contato conosco.</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
 
     <footer>
         <p>&copy; 2024 Validação de Metodologias Futurísticas</p>
     </footer>
-
-    <script>
-        // Script para carregar dinamicamente o conteúdo das páginas
-        document.addEventListener("DOMContentLoaded", function () {
-            const conteudoDiv = document.getElementById("conteudo");
-            
-            // Obtém o parâmetro da URL para determinar qual página carregar
-            const urlParams = new URLSearchParams(window.location.search);
-            const pagina = urlParams.get("pagina");
-
-            // Carrega dinamicamente o conteúdo da página solicitada ou a página inicial
-            const paginaAcarregar = pagina ? pagina : "introducao.html";
-            carregarPagina(paginaAcarregar);
-        });
-
-        function carregarPagina(pagina) {
-            const conteudoDiv = document.getElementById("conteudo");
-
-            // Usa AJAX ou outra técnica para carregar o conteúdo da página
-            const xhr = new XMLHttpRequest();
-            xhr.open("GET", pagina, true);
-
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    conteudoDiv.innerHTML = xhr.responseText;
-                }
-            };
-
-            xhr.send();
-        }
-    </script>
 
 </body>
 </html>
